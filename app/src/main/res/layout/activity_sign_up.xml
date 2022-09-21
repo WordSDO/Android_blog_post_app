@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".Sign.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="Create Account"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 01"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorGreen"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/check"
+                android:layout_below="@id/step1"
+                android:tint="@color/colorGreen"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorDarkGrey"
+            android:layout_toEndOf="@id/one"
+            android:layout_toStartOf="@id/two"/>
+
+        <RelativeLayout
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 02"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorDarkGrey"/>
+
+            <ImageView
+                android:id="@+id/img_two"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/check"
+                android:layout_below="@id/step2"
+                android:tint="@color/colorDarkGrey"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorDarkGrey"
+            android:layout_toEndOf="@id/two"
+            android:layout_toStartOf="@id/three"/>
+
+        <RelativeLayout
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 03"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorDarkGrey"/>
+
+            <ImageView
+                android:id="@+id/img_three"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/check"
+                android:layout_below="@id/step3"
+                android:tint="@color/colorDarkGrey"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/step_one_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A little bit about you"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Please fill some details to get started"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/first_name"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_light_grey"
+                        android:hint="First name"
+                        android:textColorHint="@color/colorBlack"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"/>
+
+                    <EditText
+                        android:id="@+id/last_name"
+                        android:textColorHint="@color/colorBlack"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_light_grey"
+                        android:hint="Last name"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColorHint="@color/colorBlack"
+                        android:background="@drawable/background_light_grey"
+                        android:hint="Email"
+                        android:paddingStart="15dp"
+                        android:inputType="textEmailAddress"
+                        android:paddingEnd="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/email_valid"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/check"
+                        android:tint="@color/colorDarkGrey"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/number"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/background_light_grey"
+                        android:hint="Phone"
+                        android:paddingStart="15dp"
+                        android:maxLength="11"
+                        android:textColorHint="@color/colorBlack"
+                        android:inputType="number"
+                        android:paddingEnd="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/phone_valid"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/check"
+                        android:tint="@color/colorDarkGrey"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_two_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add your account security"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Please fill the password fields"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/background_light_grey"
+                        android:hint="Password"
+                        android:paddingStart="15dp"
+                        android:textColorHint="@color/colorBlack"
+                        android:inputType="textPassword"
+                        android:paddingEnd="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/toggle_pass"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/visible"
+                        android:tint="@color/colorDarkGrey"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/confirm_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/background_light_grey"
+                        android:hint="Confirm Password"
+                        android:textColorHint="@color/colorBlack"
+                        android:paddingStart="15dp"
+                        android:inputType="textPassword"
+                        android:paddingEnd="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/pass_matched"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/check"
+                        android:tint="@color/colorDarkGrey"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_three_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A picture of you"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Add a profile picture of you"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/choose_picture"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:padding="2.5dp"
+                        android:src="@drawable/prof"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ring"/>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="5dp"
+                        android:src="@drawable/camera"
+                        android:tint="@color/colorDarkGrey"
+                        android:background="@drawable/oval_white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:text="Previous Step"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlue"/>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="Next Step"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/background"/>
+
+            <ProgressBar
+                android:id="@+id/sign_up_progress_bar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:indeterminateTint="@color/colorWhite"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

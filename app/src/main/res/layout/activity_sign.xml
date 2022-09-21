@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="40dp"
+    android:orientation="vertical"
+    tools:context=".Sign.SignActivity">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/blog_f"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"/>
+
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:text="Sign up now"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="40dp"
+        android:text="Already have an Account?"
+        android:textSize="16sp"
+        android:textColor="@color/colorLightGrey"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:text="Login here"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"/>
+
+
+
+</LinearLayout>

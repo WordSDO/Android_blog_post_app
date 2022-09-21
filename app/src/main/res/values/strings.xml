@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Excel Formula &amp; Function Admin</string>
+    <string name="all">All Post</string>
+    <string name="one">Section 1</string>
+    <string name="two">Section 2</string>
+    <string name="three">Section 3</string>
+    <string name="four">Section 4</string>
+    <string name="five">Favourite</string>
+    <string name="blog_title_here">Formula Title Here</string>
+    <string name="blog_title_here_blog_title_here_blog_title_here_blog_title_here_blog_title_here">Formula Title Here Blog Title Here Blog Title Here Blog Title Here Blog Title Here</string>
+    <string name="category">Category</string>
+    <string name="user_name">User Name</string>
+    <string name="_01_jan_2000">01-Jan-2000</string>
+    <string name="lorem_ipsum_or_lipsum_as_it_is_sometimes_known_is_dummy_text_used_in_laying_out_print_graphic_or_web_designs_the_passage_is_attributed_to_an_unspecimen_book">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unspecimen book.</string>
+    <string name="create_your_blog">Create your blog</string>
+</resources>

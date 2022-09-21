@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.silica.blogapp6">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET">
+
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.silica.blogapp6.UI.DetailsActivity"></activity>
+        <activity android:name="com.silica.blogapp6.UI.CreatePostActivity" />
+        <activity android:name="com.silica.blogapp6.UI.ProfileActivity" />
+        <activity android:name="com.silica.blogapp6.UI.HomeActivity" />
+        <activity android:name="com.silica.blogapp6.Sign.LoginActivity" />
+        <activity android:name="com.silica.blogapp6.Sign.SignUpActivity" />
+        <activity android:name="com.silica.blogapp6.Sign.SignActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

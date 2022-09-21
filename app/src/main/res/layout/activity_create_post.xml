@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".UI.CreatePostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:layout_marginTop="8dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/back"
+                android:text="Create post"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"/>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back"/>
+
+            <TextView
+                android:id="@+id/post_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Post"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/background"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDarkGrey"/>
+
+        <EditText
+            android:id="@+id/blog_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textMultiLine"
+            android:hint="Your blog title"
+            android:textColorHint="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@color/colorDarkGrey"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"/>
+
+        <LinearLayout
+            android:id="@+id/choose_picture"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera"
+                android:tint="@color/colorDarkGrey"/>
+
+            <TextView
+                android:id="@+id/ptv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Choose a picture"
+                android:textSize="18sp"
+                android:textColor="@color/colorDarkGrey"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"/>
+
+        <EditText
+            android:id="@+id/write_post"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textMultiLine"
+            android:hint="Picture caption"
+            android:gravity="top"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/colorWhite"
+            android:paddingEnd="10dp"
+            android:background="@color/colorDarkGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/second_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"/>
+
+                <LinearLayout
+                    android:id="@+id/choose_picture_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/camera"
+                        android:tint="@color/colorDarkGrey"/>
+
+                    <TextView
+                        android:id="@+id/ptv_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Choose a picture"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorDarkGrey"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"/>
+
+                <EditText
+                    android:id="@+id/write_post_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textMultiLine"
+                    android:hint="Picture caption"
+                    android:gravity="top"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:textColorHint="@color/colorWhite"
+                    android:paddingEnd="10dp"
+                    android:background="@color/colorDarkGrey"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/third_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"/>
+
+                <LinearLayout
+                    android:id="@+id/choose_picture_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/camera"
+                        android:tint="@color/colorDarkGrey"/>
+
+                    <TextView
+                        android:id="@+id/ptv_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Choose a picture"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorDarkGrey"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"/>
+
+                <EditText
+                    android:id="@+id/write_post_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textMultiLine"
+                    android:hint="Picture caption"
+                    android:gravity="top"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:textColorHint="@color/colorWhite"
+                    android:paddingEnd="10dp"
+                    android:background="@color/colorDarkGrey"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourth_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"/>
+
+                <LinearLayout
+                    android:id="@+id/choose_picture_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/camera"
+                        android:tint="@color/colorDarkGrey"/>
+
+                    <TextView
+                        android:id="@+id/ptv_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Choose a picture"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorDarkGrey"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"/>
+
+                <EditText
+                    android:id="@+id/write_post_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textMultiLine"
+                    android:hint="Picture caption"
+                    android:gravity="top"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:textColorHint="@color/colorWhite"
+                    android:paddingEnd="10dp"
+                    android:background="@color/colorDarkGrey"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"/>
+
+        <LinearLayout
+            android:id="@+id/choose_category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/category"
+                android:tint="@color/colorDarkGrey"/>
+
+            <TextView
+                android:id="@+id/ctv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Select a category"
+                android:textSize="18sp"
+                android:textColor="@color/colorDarkGrey"/>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/post_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/one"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/unsilectec"/>
+
+                <TextView
+                    android:id="@+id/ctwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/two"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/unsilectec"/>
+
+                <TextView
+                    android:id="@+id/cthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/three"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/unsilectec"/>
+
+                <TextView
+                    android:id="@+id/cfour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/four"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/unsilectec"/>
+
+                <TextView
+                    android:id="@+id/cfive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/five"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/unsilectec"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
